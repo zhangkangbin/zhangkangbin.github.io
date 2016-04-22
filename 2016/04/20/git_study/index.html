@@ -4,18 +4,20 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>安家啦！！ | xiaobao</title>
+  <title>git 学习 | xiaobao</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="this is github pages">
+  <meta name="description" content="git study，huhu！">
 <meta property="og:type" content="article">
-<meta property="og:title" content="安家啦！！">
-<meta property="og:url" content="http://yoursite.com/2016/04/18/my-pages-tests/index.html">
+<meta property="og:title" content="git 学习">
+<meta property="og:url" content="http://yoursite.com/2016/04/20/git_study/index.html">
 <meta property="og:site_name" content="xiaobao">
-<meta property="og:description" content="this is github pages">
-<meta property="og:updated_time" content="2016-04-19T06:10:11.220Z">
+<meta property="og:description" content="git study，huhu！">
+<meta property="og:image" content="http://yoursite.com/img/haha.png">
+<meta property="og:updated_time" content="2016-04-22T01:08:28.161Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="安家啦！！">
-<meta name="twitter:description" content="this is github pages">
+<meta name="twitter:title" content="git 学习">
+<meta name="twitter:description" content="git study，huhu！">
+<meta name="twitter:image" content="http://yoursite.com/img/haha.png">
   
     <link rel="alternative" href="/atom.xml" title="xiaobao" type="application/atom+xml">
   
@@ -172,11 +174,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-my-pages-tests" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-git_study" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/04/18/my-pages-tests/" class="article-date">
-  	<time datetime="2016-04-18T02:53:39.000Z" itemprop="datePublished">2016-04-18</time>
+      <a href="/2016/04/20/git_study/" class="article-date">
+  	<time datetime="2016-04-20T02:03:39.000Z" itemprop="datePublished">2016-04-20</time>
 </a>
     </div>
   
@@ -189,7 +191,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      安家啦！！
+      git 学习
     </h1>
   
 
@@ -209,10 +211,63 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="还要用markdown写，呼呼！"><a href="#还要用markdown写，呼呼！" class="headerlink" title="还要用markdown写，呼呼！"></a>还要用markdown写，呼呼！</h1><a id="more"></a>
+        <h1 id="git-study，huhu！"><a href="#git-study，huhu！" class="headerlink" title="git study，huhu！"></a>git study，huhu！</h1><a id="more"></a>
 <h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><blockquote>
 <p>我就是我，不一样的吃货！长的好看得才能叫吃货，不好看的只能叫饭桶啦！</p>
 </blockquote>
+<p>安装git 就是不说了。。<br>直下正题</p>
+<p>打开 git cmd </p>
+<p>顺便新建一个文件夹作为仓库</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> testgit</span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> test git</span><br></pre></td></tr></table></figure>
+<p>##初始化 git</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+<p>新建一个 readme.txt</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch readme.txt</span><br></pre></td></tr></table></figure>
+<p>查看文件是否创建成功</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls</span><br></pre></td></tr></table></figure>
+<p>打开 readme.txt</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi readme.txt</span><br></pre></td></tr></table></figure>
+<p>按 i 进入编辑模式</p>
+<p>输入<br>insert readme</p>
+<p>按 Esc<br>然后输入 :wq!<br>回车保存。</p>
+<p>查看 文件内容</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat readme.txt</span><br></pre></td></tr></table></figure>
+<p>是不是添加成功了啊！！<img src="/img/haha.png" alt="哈哈哈"></p>
+<p>添加文件到git </p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add readme.txt</span><br></pre></td></tr></table></figure>
+<p>warning: LF will be replaced by CRLF in myapp.<br>The file will have its original line endings in your working directory.</p>
+<p>因为我在Windows 用 git的。<br>警告我了。不管他。开玩笑不管他，你受鸟？<br>输入</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global core.autocrlf false</span><br></pre></td></tr></table></figure>
+<p>解决了。</p>
+<p>用命令 git commit告诉Git，把文件提交到仓库。</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m "init commit"</span><br></pre></td></tr></table></figure>
+<p>现在我们已经提交了一个readme.txt文件了，我们下面可以通过命令git status来查看是否还有文件未提交</p>
+<p>git status</p>
+<p>On branch master<br>Your branch is ahead of ‘origin/master’ by 1 commits.<br>  (use “git push” to publish your local commits)<br>nothing to commit, working directory clean</p>
+<p>没有可提交文件。</p>
+<p>文件删除<br>git rm 文件名</p>
+<p>示例：</p>
+<p>git rm fifle</p>
+<p>如果删除错了文件。怎么回归到上一个版本。</p>
+<p>git reset  –hard 版本号 </p>
+<p>如何查询版本号</p>
+<p>查询版本<br>git reflog  </p>
+<p>ac4f465 HEAD@{0}: commit: delete fifle<br>ca1ee69 HEAD@{1}: commit: test commit<br>400552d HEAD@{2}: commit: add file<br>037ad92 HEAD@{3}: commit: init commit<br>c06935c HEAD@{4}: reset: moving to c06935c<br>28d4430 HEAD@{5}: reset: moving to HEAD^<br>c06935c HEAD@{6}: commit: add AAAAAA<br>28d4430 HEAD@{7}: commit: add chenge<br>48682d0 HEAD@{8}: commit (initial): readme.txt</p>
+<p>选择你要回归的版本</p>
+<p>git reset – ca1ee69</p>
+<p>HEAD is now at ca1ee69 test commit</p>
+<p>上一个版本的东西就回来啦。。</p>
+<p><strong>试试提交到github</strong></p>
+<p>首先，登录github，创建一个新的仓库，名字叫testgit</p>
+<p>新建完后<br>github 提示</p>
+<p>echo “# testgit” &gt;&gt; README.md<br>git init<br>git add README.md<br>git commit -m “first commit”<br>git remote add origin <a href="https://github.com/zhangkangbin/testgit.git" target="_blank" rel="external">https://github.com/zhangkangbin/testgit.git</a><br>git push -u origin master</p>
+<p>下面这两句就是提交到上面去<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">git remote add origin https://github.com/zhangkangbin/testgit.git</span><br><span class="line"></span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure></p>
+<p>输入账号和密码（也可以用ssh key 免登陆）</p>
+<p>提交成功。</p>
+<p>Counting objects: 18, done.<br>Delta compression using up to 4 threads.<br>Compressing objects: 100% (10/10), done.<br>Writing objects: 100% (18/18), 1.52 KiB | 0 bytes/s, done.<br>Total 18 (delta 0), reused 0 (delta 0)<br>To <a href="https://github.com/zhangkangbin/testgit.git" target="_blank" rel="external">https://github.com/zhangkangbin/testgit.git</a></p>
+<ul>
+<li>[new branch]      master -&gt; master<br>Branch master set up to track remote branch master from origin.</li>
+</ul>
 
       
     </div>
@@ -222,15 +277,20 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/04/19/markdown-study/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/04/20/git_command/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          markdown 语法
+          Git常用命令
         
       </div>
     </a>
   
+  
+    <a href="/2016/04/19/markdown-study/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">markdown 语法</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
   
 </nav>
 
@@ -263,7 +323,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="my-pages-tests" data-title="安家啦！！" data-url="http://yoursite.com/2016/04/18/my-pages-tests/"></div>
+	<div class="ds-thread" data-thread-key="git_study" data-title="git 学习" data-url="http://yoursite.com/2016/04/20/git_study/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
